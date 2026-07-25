@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Compendium.Adapters.Qdrant</AssemblyName>
+    <RootNamespace>Compendium.Adapters.Qdrant</RootNamespace>
+    <Description>Compendium adapter for Qdrant (placeholder — replace with real vendor description).</Description>
+    <PackageTags>compendium;adapter;qdrant</PackageTags>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Domain-repo topology: the vector-store abstraction this adapter will implement. -->
+    <ProjectReference Include="..\Compendium.Abstractions.VectorStore\Compendium.Abstractions.VectorStore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Compendium.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+
+</Project>
