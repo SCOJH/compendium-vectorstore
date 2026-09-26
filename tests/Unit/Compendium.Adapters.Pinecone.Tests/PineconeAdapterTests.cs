@@ -13,7 +13,7 @@ namespace Compendium.Adapters.Pinecone.Tests;
 
 /// <summary>
 /// Unit tests for <see cref="PineconeAdapter"/>.
-/// Demonstrates the canonical xUnit + FluentAssertions + NSubstitute pattern.
+/// Demonstrates the canonical xUnit + AwesomeAssertions + NSubstitute pattern.
 /// </summary>
 public class PineconeAdapterTests
 {
