@@ -17,7 +17,7 @@ namespace Compendium.Adapters.Qdrant.Tests.Options;
 ///   <item>class named <c>{SUT}Tests</c></item>
 ///   <item>method named <c>{Method}_{Scenario}_{Expected}</c></item>
 ///   <item>explicit <c>// Arrange / // Act / // Assert</c> comments</item>
-///   <item>FluentAssertions only — never <c>Assert.*</c></item>
+///   <item>AwesomeAssertions only — never <c>Assert.*</c></item>
 /// </list>
 /// </summary>
 public class QdrantOptionsTests
