@@ -41,7 +41,10 @@ dotnet test  -c Release --filter "FullyQualifiedName!~IntegrationTests"   # unit
 dotnet test  -c Release   # + integration (requires Docker)
 ```
 
-- .NET 9 / C# 13, `TreatWarningsAsErrors`, central package management.
+- Targets `net9.0` and `net10.0` — both until .NET 9 leaves support on 2026-11-10 — C# 13,
+  `TreatWarningsAsErrors`, central package management. The .NET 10 SDK (see `global.json`)
+  builds both targets; running the `net9.0` half of the tests also needs the .NET 9 runtime,
+  which the .NET 9 SDK brings.
 - CI enforces a 65% line-coverage gate on the unit-testable surface (measured 67.7% at
   assembly; the pgvector raw driver is integration-covered).
 

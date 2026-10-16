@@ -1,6 +1,11 @@
 <Project>
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <!-- NET10-01: every project (libraries and test projects alike) targets net9.0 AND
+         net10.0 while consumers move to .NET 10 (LTS). net9.0 (STS) leaves support on
+         2026-11-10 and is kept only for that transition; dropping it is a later ticket.
+         The .NET 10 SDK (global.json) builds both targets; running the net9.0 half of the
+         tests also needs the .NET 9 runtime. -->
+    <TargetFrameworks>net9.0;net10.0</TargetFrameworks>
     <LangVersion>13</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
